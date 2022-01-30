@@ -1,0 +1,26 @@
+<div class="table-block" (scroll)="onScroll()">
+  <table class="w-100">
+    <thead>
+      <tr>
+        <th>檔案名稱</th>
+        <th>上傳人員</th>
+        <th>發佈單位</th>
+        <th>更新時間</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor = "let item of displayArray; index as i">
+        <td>{{ i }} {{ item.fileName }}</td>
+        <td>{{ item.creator }}</td>
+        <td>{{ item.updateTime }}</td>
+        <td>{{ item.publishDiv }}</td>
+      </tr>
+      <tr *ngIf="endIndex <= rawData.length" #loadingRef>
+        <td colspan="4" class="loading-block">
+          載入更多...
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+

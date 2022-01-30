@@ -1,0 +1,30 @@
+table {
+  border-collapse: collapse;
+}
+table thead th {
+  position: sticky;
+  top: -1px;
+  background-color: #308470;
+  color: #fff;
+  letter-spacing: 1.2px;
+  padding: 5px 10px;
+  text-align: left;
+}
+table tbody tr {
+  border-bottom: 1px solid rgba(112, 112, 112, 0.3);
+}
+table tbody tr td{
+  letter-spacing: 1.2px;
+  padding: 5px 10px;
+  text-align: left;
+  height: 40px;
+}
+.table-block {
+  max-height: 500px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+table tbody tr .loading-block {
+  text-align: center;
+  background-color:rgba(112, 112, 112, 0.3)
+}
